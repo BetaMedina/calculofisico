@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script >
+    
+	<script>
+        function embed(){
+            alert('<iframe src="https://betamedina.github.io/calculofisico/" name="Fisico"></iframe>')
+        }
 		function EduFisica(){
 			var sexo = document.getElementById('Sex').value;
 			var idade =parseFloat(  document.getElementById('age').value);
@@ -183,7 +187,7 @@
 
 				<div class="container-contact100-form-btn">
 					<button onclick="EduFisica();" class="contact100-form-btn ">
-						Send Message
+						Pronto
 					</button>
 				</div>
 			</form>
@@ -255,5 +259,11 @@
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script src="js/main.js"></script>
+    
+    <div class="container-contact100-form-btn">
+					<button onclick="embed();" class="contact100-form-btn ">
+						embed
+					</button>
+				</div>
 </body>
 </html>
